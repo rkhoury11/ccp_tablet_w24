@@ -132,7 +132,7 @@ img {
 
 @media (prefers-reduced-motion: reduce) {
     /* Disable animations */
-    /* Example: */
+    
     .animated-element {
       animation: none !important;
       transition: none !important;
@@ -160,8 +160,7 @@ header {
 }
 
 @media only screen and (min-width: 600px) {
-    /* Styles for tablet view */
-    /* Add your CSS rules for tablet layout here */
+    
     #main {
         margin-top: 100px;
     }

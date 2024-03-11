@@ -207,8 +207,7 @@ main div div ul{
 }
 
 @media only screen and (min-width: 600px) {
-    /* Styles for tablet view */
-    /* Add your CSS rules for tablet layout here */
+    
     #main {
         margin-top: 100px;
     }
