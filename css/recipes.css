@@ -5,23 +5,31 @@ body {
 }
 
 h1 {
-    background-color: white; /* Michigan blue */
-    color: #00274C;
-    display: flex;
+    background-color: #00447E; /* Michigan blue */
+    color: white;
+    display: inline-block;
     align-items: center;
     padding: 20px;
     font-size: 5vw;
-    font-weight: bold;
     margin-top: 10px;
-    
+    margin-left: 40px;
+    font-weight: bold;
+    width: auto;
 }
 
 .nav-bar {
     /* background-color: #FFCB05; Michigan maize */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     padding: 10px;
+    
+    background-color: #00447E;
 }
 
-.nav-bar ul {
+/* .nav-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,9 +37,9 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
-}
+} */
 
-.nav-bar li a {
+/* .nav-bar li a {
     display: block;
     padding: 15px;
     color: #00447E;
@@ -39,7 +47,7 @@ h1 {
     font-size: 2vw;
     font-weight: bold;
     text-align: center;
-}
+} */
 
 .index-nav {
     background-color: #FFCB05;
@@ -59,18 +67,18 @@ h1 {
 
 
 
-.nav-bar a {
-    color: #00274C; /* Michigan blue */
+/* .nav-bar a {
+    color: #00274C; 
     text-decoration: none;
     font-size: 20px;
 }
 
 .nav-bar a:hover {
     text-decoration: underline;
-}
+} */
 
 #main {
-    margin-top: 20px;
+    margin-top: 85px;
     padding: 20px;
 }
 
@@ -158,6 +166,7 @@ main div div ul{
 .skip-to-hidden:focus {
     position: static!important;
     overflow: visible;
+    margin-top: 122px;
     width: auto;
     height: auto;
 }
@@ -170,4 +179,32 @@ main div div ul{
       animation: none !important;
       transition: none !important;
     }
+  }
+
+  header {
+    position: relative;
+    transition: left 0.3s ease; 
+}
+
+.sidebar.active + header {
+    left: 250px;
+}
+
+.nav-toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px; 
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    /* Styles for tablet view */
+    /* Add your CSS rules for tablet layout here */
+    #main {
+        margin-top: 100px;
+    }
+
   }
